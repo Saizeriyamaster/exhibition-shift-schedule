@@ -43,8 +43,8 @@
   .cal{display:grid; min-width:900px; grid-auto-rows:40px; position:relative;
     background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 39px, var(--border) 39px, var(--border) 40px);
   }
-  .cal85{grid-template-columns:52px repeat(11,1fr);}
-  .cal86{grid-template-columns:52px repeat(11,1fr);}
+  .cal85{grid-template-columns:52px repeat(12,1fr);}
+  .cal86{grid-template-columns:52px repeat(12,1fr);}
   .colbg{grid-row:1/-1; border-right:1px solid var(--border);}
   .head{grid-row:1; display:flex; align-items:center; justify-content:center; font-size:0.76rem; font-weight:700; padding:4px 2px; text-align:center; background:var(--card); position:sticky; top:0; z-index:3; border-bottom:1px solid var(--border);}
   .head small{display:block; font-weight:400; color:var(--muted); font-size:0.62rem;}
@@ -97,6 +97,7 @@
     <div class="colbg" style="grid-column:10;"></div>
     <div class="colbg" style="grid-column:11;"></div>
     <div class="colbg" style="grid-column:12;"></div>
+    <div class="colbg" style="grid-column:13;"></div>
 
     <div class="head" style="grid-column:2;">西川</div>
     <div class="head" style="grid-column:3;">久保田</div>
@@ -109,6 +110,7 @@
     <div class="head" style="grid-column:10;">佐々木</div>
     <div class="head" style="grid-column:11;">植山</div>
     <div class="head" style="grid-column:12;">中川</div>
+    <div class="head" style="grid-column:13;">岡田<small>16-17時のみ</small></div>
 
     <div class="timelabel" style="grid-row:2/3;">8:00</div>
     <div class="timelabel" style="grid-row:3/4;">9:00</div>
@@ -191,11 +193,15 @@
     <div class="ev lunch" style="grid-column:12; grid-row:7/8;" title="昼休憩">昼休憩</div>
     <div class="ev standby" style="grid-column:12; grid-row:8/11;" title="待機">待機</div>
     <div class="ev flyer" style="grid-column:12; grid-row:11/12;" title="チラシ配り">チラシ</div>
+
+    <!-- 岡田 col13: 16-17時のみ -->
+    <div class="ev off" style="grid-column:13; grid-row:2/10;" title="不可">不可</div>
+    <div class="ev booth" style="grid-column:13; grid-row:10/12;" title="ブース対応（16-17時のみ・応援枠）">ブース</div>
   </div>
   </div>
 
   <div class="scroller" style="margin-top:6px; padding:6px 10px; font-size:0.78rem; color:var(--muted); border:none; background:transparent;">
-    13:00台のみブースが3名（久保田・森・星野）に一時的に落ちますが、全員が昼休憩を分散して取った結果の想定内の凹みです。
+    13:00台のみブースが3名（久保田・森・星野）に一時的に落ちますが、全員が昼休憩を分散して取った結果の想定内の凹みです。16-17時は岡田も加わるのでブースは5名に厚くなります。
   </div>
 
   <h2>8/6（木）</h2>
@@ -213,6 +219,7 @@
     <div class="colbg" style="grid-column:10;"></div>
     <div class="colbg" style="grid-column:11;"></div>
     <div class="colbg" style="grid-column:12;"></div>
+    <div class="colbg" style="grid-column:13;"></div>
 
     <div class="head" style="grid-column:2;">西川</div>
     <div class="head" style="grid-column:3;">久保田</div>
@@ -225,6 +232,7 @@
     <div class="head" style="grid-column:10;">佐々木<small>12時以降不可</small></div>
     <div class="head" style="grid-column:11;">植山</div>
     <div class="head" style="grid-column:12;">中川<small>14時から</small></div>
+    <div class="head" style="grid-column:13;">岡田<small>ほぼ終日</small></div>
 
     <div class="timelabel" style="grid-row:2/3;">9:00</div>
     <div class="timelabel" style="grid-row:3/4;">10:00</div>
@@ -280,12 +288,9 @@
     <div class="ev off" style="grid-column:8; grid-row:2/13;" title="不参加">不参加</div>
 
     <!-- 羽田野 col9 -->
-    <div class="ev booth" style="grid-column:9; grid-row:2/4;" title="ブース応援（この時間帯は特に手薄）">応援</div>
-    <div class="gapmark" style="grid-column:9; grid-row:2/4;" title="9-10時台は西川の登壇でブースが薄いため羽田野が応援"></div>
-    <div class="ev lunch" style="grid-column:9; grid-row:4/5;" title="昼休憩">昼休憩</div>
-    <div class="ev booth" style="grid-column:9; grid-row:5/7;" title="ブース応援（佐々木・中川が抜ける時間帯）">応援</div>
-    <div class="gapmark" style="grid-column:9; grid-row:5/7;" title="12-13時台は佐々木退勤・中川出勤前でブースが薄いため羽田野が応援"></div>
-    <div class="ev flyer" style="grid-column:9; grid-row:7/11;" title="チラシ配り">チラシ</div>
+    <div class="ev flyer" style="grid-column:9; grid-row:2/5;" title="チラシ配り">チラシ</div>
+    <div class="ev lunch" style="grid-column:9; grid-row:5/6;" title="昼休憩">昼休憩</div>
+    <div class="ev flyer" style="grid-column:9; grid-row:6/11;" title="チラシ配り">チラシ</div>
     <div class="ev off" style="grid-column:9; grid-row:11/13;" title="想定なし">―</div>
 
     <!-- 佐々木 col10: 9-11時のみ -->
@@ -300,11 +305,17 @@
     <div class="ev booth" style="grid-column:12; grid-row:7/11;" title="ブース対応（14時から参加）">ブース</div>
     <div class="ev setup" style="grid-column:12; grid-row:11/12;" title="撤収作業">撤収</div>
     <div class="ev off" style="grid-column:12; grid-row:12/13;" title="想定なし">―</div>
+
+    <!-- 岡田 col13: ほぼ終日 -->
+    <div class="ev booth" style="grid-column:13; grid-row:2/8;" title="ブース対応">ブース</div>
+    <div class="ev lunch" style="grid-column:13; grid-row:8/9;" title="昼休憩">昼休憩</div>
+    <div class="ev booth" style="grid-column:13; grid-row:9/11;" title="ブース対応">ブース</div>
+    <div class="ev off" style="grid-column:13; grid-row:11/13;" title="想定なし">―</div>
   </div>
   </div>
 
   <div class="scroller" style="margin-top:6px; padding:6px 10px; font-size:0.78rem; color:var(--muted); border:none; background:transparent;">
-    16:00・17:00台は久保田・森がそれぞれ昼休憩に入るため、ブースが一時的に3名になります。この日はブース専任が久保田・森の2名しかいないため、羽田野の応援や西川の終日ブース対応でも埋めきれない構造的な薄さです。人数を増やすなら岡田さん（この日ほぼ終日チェックあり）に声をかけるのも一案かもしれません。
+    岡田がほぼ終日ブースに入れるおかげで、9-13時台の薄さは（西川が来られない9-10時を除き）短1名程度まで緩和されています。16・17時台は久保田・森がそれぞれ昼休憩に入るため一時的に4名になりますが、大きな崩れはありません。
   </div>
 
 </div>
