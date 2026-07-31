@@ -78,7 +78,6 @@
     <span><span class="dot" style="background:var(--c-standby);"></span>待機</span>
     <span><span class="dot" style="background:var(--c-setup);"></span>設営/撤収</span>
     <span><span class="dot" style="background:var(--c-off);"></span>不可/不参加</span>
-    <span><span class="dashedbox"></span>未回答の提案</span>
     <span><span class="pin">📌</span>来訪PM固定</span>
     <span><span class="warnpin">⚠</span>人数不足枠</span>
   </div>
@@ -109,7 +108,7 @@
     <div class="head" style="grid-column:9;">羽田野</div>
     <div class="head" style="grid-column:10;">佐々木</div>
     <div class="head" style="grid-column:11;">植山</div>
-    <div class="head" style="grid-column:12;">中川<small>未回答</small></div>
+    <div class="head" style="grid-column:12;">中川</div>
 
     <div class="timelabel" style="grid-row:2/3;">8:00</div>
     <div class="timelabel" style="grid-row:3/4;">9:00</div>
@@ -125,87 +124,78 @@
 
     <!-- 西川 col2 -->
     <div class="ev setup" style="grid-column:2; grid-row:2/3;" title="設営">設営</div>
-    <div class="ev float" style="grid-column:2; grid-row:3/7;" title="フロート営業">フロート</div>
-    <div class="ev booth" style="grid-column:2; grid-row:7/8;" title="ブース対応（久保田・佐々木・中川と一緒に4名確保）">ブース</div>
-    <div class="ev float" style="grid-column:2; grid-row:8/12;" title="フロート営業">フロート</div>
+    <div class="ev float" style="grid-column:2; grid-row:3/12;" title="フロート営業">フロート</div>
 
     <!-- 久保田 col3 -->
     <div class="ev setup" style="grid-column:3; grid-row:2/3;" title="設営">設営</div>
     <div class="ev booth" style="grid-column:3; grid-row:3/4;" title="ブース対応">ブース</div>
     <div class="ev standby" style="grid-column:3; grid-row:4/5;" title="📌NTTData 羽原様（担当PM：久保田）">クライアント対応</div>
     <div class="lockmark" style="grid-column:3; grid-row:4/5;" title="📌NTTData 羽原様 来訪"></div>
-    <div class="ev booth" style="grid-column:3; grid-row:5/9;" title="ブース対応">ブース</div>
-    <div class="ev lunch" style="grid-column:3; grid-row:9/10;" title="昼休憩">昼休憩</div>
-    <div class="ev booth" style="grid-column:3; grid-row:10/12;" title="ブース対応">ブース</div>
+    <div class="ev lunch" style="grid-column:3; grid-row:5/6;" title="昼休憩">昼休憩</div>
+    <div class="ev booth" style="grid-column:3; grid-row:6/12;" title="ブース対応">ブース</div>
 
     <!-- 森 col4 -->
     <div class="ev setup" style="grid-column:4; grid-row:2/3;" title="設営">設営</div>
-    <div class="ev booth" style="grid-column:4; grid-row:3/7;" title="ブース対応">ブース</div>
-    <div class="ev lunch" style="grid-column:4; grid-row:7/8;" title="昼休憩">昼休憩</div>
-    <div class="ev booth" style="grid-column:4; grid-row:8/12;" title="ブース対応">ブース</div>
+    <div class="ev booth" style="grid-column:4; grid-row:3/6;" title="ブース対応">ブース</div>
+    <div class="ev lunch" style="grid-column:4; grid-row:6/7;" title="昼休憩">昼休憩</div>
+    <div class="ev booth" style="grid-column:4; grid-row:7/12;" title="ブース対応">ブース</div>
 
-    <!-- 飯野 col5: 実際の回答＝水曜14-17時のみ -->
+    <!-- 飯野 col5: 14-17時のみ参加 -->
     <div class="ev off" style="grid-column:5; grid-row:2/8;" title="不参加">不参加</div>
-    <div class="ev booth" style="grid-column:5; grid-row:8/11;" title="ブース対応（14-17時のみ参加）">ブース</div>
-    <div class="ev off" style="grid-column:5; grid-row:11/12;" title="不参加">不参加</div>
+    <div class="ev booth" style="grid-column:5; grid-row:8/12;" title="ブース対応（14-17時のみ参加）">ブース</div>
 
     <!-- 星野 col6 -->
     <div class="ev off" style="grid-column:6; grid-row:2/4;" title="出勤前">出勤前</div>
-    <div class="ev booth" style="grid-column:6; grid-row:4/7;" title="ブース対応">ブース</div>
-    <div class="ev lunch" style="grid-column:6; grid-row:7/8;" title="昼休憩">昼休憩</div>
-    <div class="ev booth" style="grid-column:6; grid-row:8/10;" title="ブース対応">ブース</div>
+    <div class="ev booth" style="grid-column:6; grid-row:4/10;" title="ブース対応">ブース</div>
     <div class="ev off" style="grid-column:6; grid-row:10/12;" title="不可">不可</div>
 
     <!-- 越川 col7 -->
     <div class="ev setup" style="grid-column:7; grid-row:2/3;" title="設営">設営</div>
     <div class="ev flyer" style="grid-column:7; grid-row:3/5;" title="チラシ配り">チラシ</div>
     <div class="ev lunch" style="grid-column:7; grid-row:5/6;" title="昼休憩">昼休憩</div>
-    <div class="ev flyer" style="grid-column:7; grid-row:6/7;" title="チラシ配り">チラシ</div>
-    <div class="ev flyer" style="grid-column:7; grid-row:7/8;" title="チラシ配り（この時間は1人）">チラシ</div>
-    <div class="gapmark" style="grid-column:7; grid-row:7/8;" title="13時台はチラシが1人薄い枠"></div>
-    <div class="ev off" style="grid-column:7; grid-row:8/9;" title="不可">不可</div>
-    <div class="ev flyer" style="grid-column:7; grid-row:9/11;" title="チラシ配り">チラシ</div>
-    <div class="ev flyer" style="grid-column:7; grid-row:11/12;" title="チラシ配り（この時間は1人）">チラシ</div>
-    <div class="gapmark" style="grid-column:7; grid-row:11/12;" title="17時台はチラシが1人薄い枠"></div>
+    <div class="ev flyer" style="grid-column:7; grid-row:6/12;" title="チラシ配り">チラシ</div>
 
     <!-- 長内 col8: 全部不参加 -->
     <div class="ev off" style="grid-column:8; grid-row:2/12;" title="不参加">不参加</div>
 
     <!-- 羽田野 col9 -->
-    <div class="ev off" style="grid-column:9; grid-row:2/3;" title="出勤前">出勤前</div>
-    <div class="ev flyer" style="grid-column:9; grid-row:3/7;" title="チラシ配り">チラシ</div>
-    <div class="ev lunch" style="grid-column:9; grid-row:7/8;" title="昼休憩">昼休憩</div>
-    <div class="ev flyer" style="grid-column:9; grid-row:8/11;" title="チラシ配り">チラシ</div>
+    <div class="ev off" style="grid-column:9; grid-row:2/4;" title="不可">不可</div>
+    <div class="ev flyer" style="grid-column:9; grid-row:4/6;" title="チラシ配り">チラシ</div>
+    <div class="ev lunch" style="grid-column:9; grid-row:6/7;" title="昼休憩">昼休憩</div>
+    <div class="ev flyer" style="grid-column:9; grid-row:7/11;" title="チラシ配り">チラシ</div>
     <div class="ev off" style="grid-column:9; grid-row:11/12;" title="不可">不可</div>
 
     <!-- 佐々木 col10: 8/5フル参加 -->
     <div class="ev off" style="grid-column:10; grid-row:2/3;" title="出勤前">出勤前</div>
-    <div class="ev booth" style="grid-column:10; grid-row:3/5;" title="ブース代打（星野の穴埋め）">代打</div>
-    <div class="ev flyer" style="grid-column:10; grid-row:5/6;" title="チラシ代打（越川の昼休憩を穴埋め）">代打</div>
-    <div class="ev lunch" style="grid-column:10; grid-row:6/7;" title="昼休憩">昼休憩</div>
-    <div class="ev booth" style="grid-column:10; grid-row:7/8;" title="ブース応援（この時間帯は特に手薄）">応援</div>
-    <div class="ev flyer" style="grid-column:10; grid-row:8/9;" title="チラシ代打（越川の穴埋め）">代打</div>
-    <div class="ev standby" style="grid-column:10; grid-row:9/10;" title="待機">待機</div>
-    <div class="ev booth" style="grid-column:10; grid-row:10/12;" title="ブース代打">代打</div>
+    <div class="ev booth" style="grid-column:10; grid-row:3/7;" title="ブース対応">ブース</div>
+    <div class="ev lunch" style="grid-column:10; grid-row:7/8;" title="昼休憩">昼休憩</div>
+    <div class="ev standby" style="grid-column:10; grid-row:8/10;" title="待機">待機</div>
+    <div class="ev booth" style="grid-column:10; grid-row:10/11;" title="ブース対応">ブース</div>
+    <div class="ev standby" style="grid-column:10; grid-row:11/12;" title="待機">待機</div>
 
     <!-- 植山 col11 -->
-    <div class="ev off" style="grid-column:11; grid-row:2/4;" title="出勤前">出勤前</div>
+    <div class="ev off" style="grid-column:11; grid-row:2/3;" title="出勤前">出勤前</div>
+    <div class="ev booth" style="grid-column:11; grid-row:3/4;" title="ブース対応">ブース</div>
     <div class="ev standby" style="grid-column:11; grid-row:4/5;" title="待機">待機</div>
-    <div class="ev booth" style="grid-column:11; grid-row:5/7;" title="ブース代打">代打</div>
+    <div class="ev booth" style="grid-column:11; grid-row:5/7;" title="ブース対応">ブース</div>
     <div class="ev standby" style="grid-column:11; grid-row:7/8;" title="📌Fulmark 小板橋様（担当PM：植山）">クライアント対応</div>
     <div class="lockmark" style="grid-column:11; grid-row:7/8;" title="📌Fulmark 小板橋様 来訪"></div>
-    <div class="ev standby" style="grid-column:11; grid-row:8/9;" title="待機">待機</div>
-    <div class="ev booth" style="grid-column:11; grid-row:9/10;" title="ブース代打">代打</div>
-    <div class="ev standby" style="grid-column:11; grid-row:10/11;" title="待機">待機</div>
-    <div class="ev booth" style="grid-column:11; grid-row:11/12;" title="ブース代打">代打</div>
+    <div class="ev standby" style="grid-column:11; grid-row:8/11;" title="待機">待機</div>
+    <div class="ev booth" style="grid-column:11; grid-row:11/12;" title="ブース対応">ブース</div>
 
-    <!-- 中川 col12 proposed -->
-    <div class="ev off" style="grid-column:12; grid-row:2/3;" title="未回答">―</div>
-    <div class="ev booth proposed" style="grid-column:12; grid-row:3/4;" title="【提案】ブース対応">ブース?</div>
-    <div class="ev off" style="grid-column:12; grid-row:4/7;" title="未回答">―</div>
-    <div class="ev booth proposed" style="grid-column:12; grid-row:7/8;" title="【提案】ブース応援">応援?</div>
-    <div class="ev off" style="grid-column:12; grid-row:8/12;" title="未回答">―</div>
+    <!-- 中川 col12 -->
+    <div class="ev setup" style="grid-column:12; grid-row:2/3;" title="設営">設営</div>
+    <div class="ev flyer" style="grid-column:12; grid-row:3/4;" title="チラシ配り">チラシ</div>
+    <div class="ev standby" style="grid-column:12; grid-row:4/5;" title="待機">待機</div>
+    <div class="ev flyer" style="grid-column:12; grid-row:5/7;" title="チラシ配り">チラシ</div>
+    <div class="ev lunch" style="grid-column:12; grid-row:7/8;" title="昼休憩">昼休憩</div>
+    <div class="ev standby" style="grid-column:12; grid-row:8/11;" title="待機">待機</div>
+    <div class="ev flyer" style="grid-column:12; grid-row:11/12;" title="チラシ配り">チラシ</div>
   </div>
+  </div>
+
+  <div class="scroller" style="margin-top:6px; padding:6px 10px; font-size:0.78rem; color:var(--muted); border:none; background:transparent;">
+    13:00台のみブースが3名（久保田・森・星野）に一時的に落ちますが、全員が昼休憩を分散して取った結果の想定内の凹みです。
   </div>
 
   <h2>8/6（木）</h2>
@@ -232,9 +222,9 @@
     <div class="head" style="grid-column:7;">越川</div>
     <div class="head" style="grid-column:8;">長内</div>
     <div class="head" style="grid-column:9;">羽田野</div>
-    <div class="head" style="grid-column:10;">佐々木</div>
+    <div class="head" style="grid-column:10;">佐々木<small>12時以降不可</small></div>
     <div class="head" style="grid-column:11;">植山</div>
-    <div class="head" style="grid-column:12;">中川<small>未回答</small></div>
+    <div class="head" style="grid-column:12;">中川<small>14時から</small></div>
 
     <div class="timelabel" style="grid-row:2/3;">9:00</div>
     <div class="timelabel" style="grid-row:3/4;">10:00</div>
@@ -250,27 +240,24 @@
 
     <!-- 西川 col2 -->
     <div class="ev standby" style="grid-column:2; grid-row:2/4;" title="登壇">登壇</div>
-    <div class="gapmark" style="grid-column:2; grid-row:2/4;" title="9-10時台はブースが1名薄い枠（西川が登壇のため）"></div>
-    <div class="ev booth" style="grid-column:2; grid-row:4/11;" title="ブース対応（ブース5人目。良い商談があれば横入りOK）">ブース</div>
+    <div class="ev booth" style="grid-column:2; grid-row:4/11;" title="ブース対応（人数が薄いため終日サポート。商談があれば横入りOK）">ブース</div>
     <div class="ev setup" style="grid-column:2; grid-row:11/13;" title="撤収作業">撤収</div>
 
     <!-- 久保田 col3 -->
     <div class="ev booth" style="grid-column:3; grid-row:2/3;" title="ブース対応">ブース</div>
     <div class="ev standby" style="grid-column:3; grid-row:3/5;" title="📌Jectone 木下様（担当PM：久保田）">クライアント対応</div>
     <div class="lockmark" style="grid-column:3; grid-row:3/5;" title="📌Jectone 木下様 来訪"></div>
-    <div class="ev booth" style="grid-column:3; grid-row:5/6;" title="ブース対応">ブース</div>
-    <div class="ev lunch" style="grid-column:3; grid-row:6/7;" title="昼休憩">昼休憩</div>
-    <div class="ev booth" style="grid-column:3; grid-row:7/11;" title="ブース対応">ブース</div>
+    <div class="ev booth" style="grid-column:3; grid-row:5/9;" title="ブース対応">ブース</div>
+    <div class="ev lunch" style="grid-column:3; grid-row:9/10;" title="昼休憩">昼休憩</div>
+    <div class="ev booth" style="grid-column:3; grid-row:10/11;" title="ブース対応">ブース</div>
     <div class="ev setup" style="grid-column:3; grid-row:11/13;" title="撤収作業">撤収</div>
 
     <!-- 森 col4 -->
     <div class="ev booth" style="grid-column:4; grid-row:2/3;" title="ブース対応">ブース</div>
-    <div class="ev standby" style="grid-column:4; grid-row:3/4;" title="📌既存クライアント来訪（担当：森・越川、講演も参加）">講演参観</div>
-    <div class="lockmark" style="grid-column:4; grid-row:3/4;" title="📌既存クライアント来訪"></div>
-    <div class="ev booth" style="grid-column:4; grid-row:4/5;" title="ブース対応">ブース</div>
-    <div class="ev lunch" style="grid-column:4; grid-row:5/6;" title="昼休憩（この時間は佐々木も不可のため特に手薄）">昼休憩</div>
-    <div class="gapmark" style="grid-column:4; grid-row:5/6;" title="12時台は森が昼休憩・佐々木も不可でブースが特に薄い枠"></div>
-    <div class="ev booth" style="grid-column:4; grid-row:6/11;" title="ブース対応">ブース</div>
+    <div class="ev standby" style="grid-column:4; grid-row:3/4;" title="📌既存クライアント来訪（担当：森・越川、講演も参加。西川が登壇）">講演参観</div>
+    <div class="lockmark" style="grid-column:4; grid-row:3/4;" title="📌既存クライアント来訪（西川の登壇に参加）"></div>
+    <div class="ev booth" style="grid-column:4; grid-row:4/10;" title="ブース対応">ブース</div>
+    <div class="ev lunch" style="grid-column:4; grid-row:10/11;" title="昼休憩">昼休憩</div>
     <div class="ev setup" style="grid-column:4; grid-row:11/13;" title="撤収作業">撤収</div>
 
     <!-- 飯野 col5: 木曜は不参加 -->
@@ -281,37 +268,43 @@
 
     <!-- 越川 col7 -->
     <div class="ev flyer" style="grid-column:7; grid-row:2/3;" title="チラシ配り">チラシ</div>
-    <div class="ev standby" style="grid-column:7; grid-row:3/4;" title="📌既存クライアント来訪対応（講演も参加）">講演参観</div>
+    <div class="ev standby" style="grid-column:7; grid-row:3/4;" title="📌既存クライアント来訪対応（講演も参加。西川が登壇）">講演参観</div>
     <div class="lockmark" style="grid-column:7; grid-row:3/4;" title="📌既存クライアント来訪"></div>
     <div class="ev flyer" style="grid-column:7; grid-row:4/8;" title="チラシ配り">チラシ</div>
     <div class="ev lunch" style="grid-column:7; grid-row:8/9;" title="昼休憩">昼休憩</div>
     <div class="ev flyer" style="grid-column:7; grid-row:9/11;" title="チラシ配り">チラシ</div>
     <div class="ev setup" style="grid-column:7; grid-row:11/12;" title="撤収作業">撤収</div>
-    <div class="ev off" style="grid-column:7; grid-row:12/13;" title="退勤">退勤</div>
+    <div class="ev off" style="grid-column:7; grid-row:12/13;" title="不可">不可</div>
 
     <!-- 長内 col8: 全部不参加 -->
     <div class="ev off" style="grid-column:8; grid-row:2/13;" title="不参加">不参加</div>
 
     <!-- 羽田野 col9 -->
-    <div class="ev flyer" style="grid-column:9; grid-row:2/5;" title="チラシ配り">チラシ</div>
-    <div class="ev lunch" style="grid-column:9; grid-row:5/6;" title="昼休憩">昼休憩</div>
-    <div class="ev flyer" style="grid-column:9; grid-row:6/9;" title="チラシ配り">チラシ</div>
-    <div class="ev standby" style="grid-column:9; grid-row:9/11;" title="クライアント対応">クライアント対応</div>
+    <div class="ev booth" style="grid-column:9; grid-row:2/4;" title="ブース応援（この時間帯は特に手薄）">応援</div>
+    <div class="gapmark" style="grid-column:9; grid-row:2/4;" title="9-10時台は西川の登壇でブースが薄いため羽田野が応援"></div>
+    <div class="ev lunch" style="grid-column:9; grid-row:4/5;" title="昼休憩">昼休憩</div>
+    <div class="ev booth" style="grid-column:9; grid-row:5/7;" title="ブース応援（佐々木・中川が抜ける時間帯）">応援</div>
+    <div class="gapmark" style="grid-column:9; grid-row:5/7;" title="12-13時台は佐々木退勤・中川出勤前でブースが薄いため羽田野が応援"></div>
+    <div class="ev flyer" style="grid-column:9; grid-row:7/11;" title="チラシ配り">チラシ</div>
     <div class="ev off" style="grid-column:9; grid-row:11/13;" title="想定なし">―</div>
 
-    <!-- 佐々木 col10 -->
-    <div class="ev booth" style="grid-column:10; grid-row:2/5;" title="ブース対応">ブース</div>
+    <!-- 佐々木 col10: 9-11時のみ -->
+    <div class="ev booth" style="grid-column:10; grid-row:2/5;" title="ブース対応（9-11時のみ）">ブース</div>
     <div class="ev off" style="grid-column:10; grid-row:5/13;" title="12時以降は不可">不可</div>
 
-    <!-- 植山 col11 -->
+    <!-- 植山 col11: 終日不参加 -->
     <div class="ev off" style="grid-column:11; grid-row:2/13;" title="終日不参加">不参加</div>
 
-    <!-- 中川 col12 proposed -->
-    <div class="ev booth proposed" style="grid-column:12; grid-row:2/8;" title="【提案】ブース対応">ブース?</div>
-    <div class="ev lunch proposed" style="grid-column:12; grid-row:8/9;" title="【提案】昼休憩">昼休憩?</div>
-    <div class="ev booth proposed" style="grid-column:12; grid-row:9/11;" title="【提案】ブース対応">ブース?</div>
-    <div class="ev off" style="grid-column:12; grid-row:11/13;" title="想定なし">―</div>
+    <!-- 中川 col12: 14時から -->
+    <div class="ev off" style="grid-column:12; grid-row:2/7;" title="14時から参加のため不参加">不参加</div>
+    <div class="ev booth" style="grid-column:12; grid-row:7/11;" title="ブース対応（14時から参加）">ブース</div>
+    <div class="ev setup" style="grid-column:12; grid-row:11/12;" title="撤収作業">撤収</div>
+    <div class="ev off" style="grid-column:12; grid-row:12/13;" title="想定なし">―</div>
   </div>
+  </div>
+
+  <div class="scroller" style="margin-top:6px; padding:6px 10px; font-size:0.78rem; color:var(--muted); border:none; background:transparent;">
+    16:00・17:00台は久保田・森がそれぞれ昼休憩に入るため、ブースが一時的に3名になります。この日はブース専任が久保田・森の2名しかいないため、羽田野の応援や西川の終日ブース対応でも埋めきれない構造的な薄さです。人数を増やすなら岡田さん（この日ほぼ終日チェックあり）に声をかけるのも一案かもしれません。
   </div>
 
 </div>
